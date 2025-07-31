@@ -1,0 +1,149 @@
+/* RESET GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* BODY GERAL */
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+nav ul li a button:hover {
+    background-color: #0056b3;
+}
+
+/* MAIN SECTION */
+main {
+    padding: 30px 10%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* FILMES EM CARTAZ */
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.movie {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.movie:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.movie img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #f1f1f1;
+}
+
+.movie h2 {
+    font-size: 1.8rem;
+    padding: 15px;
+    color: #333;
+}
+
+.movie p {
+    padding: 0 15px 15px;
+    color: #555;
+    font-size: 1rem;
+}
+
+.movie .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 15px 15px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.movie .btn:hover {
+    background-color: #218838;
+}
+
+/* FOOTER */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* RESPONSIVO */
+@media screen and (max-width: 768px) {
+    main {
+        padding: 20px;
+    }
+
+    .movie-list {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .movie {
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}
