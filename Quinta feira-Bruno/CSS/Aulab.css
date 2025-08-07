@@ -1,0 +1,5 @@
+
+h3 {
+  color: color-mix(in hsl, red 50%, blue 50%);
+}
+
