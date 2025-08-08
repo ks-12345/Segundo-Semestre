@@ -1,35 +1,22 @@
 <?php
- echo"Ola! \n";
- $nome="Brenda \n";
- $idade="20\n";
- $ano_atual ="2025";
+/*  Exercicio 4: Crie um algoritmo que calcule a média entre 2 notas e fale se o aluno foi aprovado ou reprovado. Considere a média 7 como nota de corte. */
 
+$nome = "Enzo Enrico";
 
- $data_nasc = $ano_atual-$idade;
- echo $nome, "você nasceu em:", $data_nasc;
-?>
+echo "Boa tarde";
 
+$nota1 = readline(prompt:"Digite a 1°nota do aluno: ");
+$nota2 = readline(prompt:"Digite a 2°nota do aluno: ");
 
-<?php 
-/* 2. Dado uma frase "Programação em php." 
-transformá-la em maiuscula, imprima, depois em minuscula e imprima de novo.*/
+$presenca = readline(prompt:"Digite a porcentagem de presença do aluno: ");
+$media = ($nota1 + $nota2) / 2;
 
-$exerc2= "Programação em php";
-echo  "\nMinusculo:", $exerc2;
-$exerc2= strtoupper($exerc2);
-echo "\nMaiusculo:", $exerc2;   
-$exerc2= strtoupper($exerc2);
-echo "\nMinusculo novamente:", $exerc2;
-?>
+if (($media >= 7 && $presenca >= 75) || $nome == "Enzo Enrico") {
+    echo "Aluno aprovado com média: $media e presença: $presenca%";
+} else {
+    echo "Aluno reprovado com média: $media";
+}
 
+// Caso o aluno tenha o nome "Enzo Enrico", ele será aprovado independente da média e presença. Crie uma variavel $nome.
 
-<?php
-/*3. Numa dada frase "O PHP foi criado em 1995". 
-- trocar o "o" por "0",
-- o "a" por "4",  e o "i" por "1".*/
-
-$exerc3 = "O PHP fo1 criado em mil novecentos e noventa e cinco";
-echo "\nAntes do comando replace: \n", $exerc3; 
-$exerc3 = str_replace(['o', 'a', 'i'], ['0','4','1'], $exerc3);
-echo "\nApos o comando replace: \n", $exerc3;
 ?>
