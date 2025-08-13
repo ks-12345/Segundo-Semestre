@@ -1,17 +1,17 @@
 <?php
 
-$nota = 7
+$temperatura = 16
 ;
 
-if ($nota >= 9) {
+if ($temperatura <= 15) {
 
     echo "Frio";
     }
-elseif ($nota >= 7) {
+elseif ($temperatura >= 25) {
 
-    echo "Agradavel";
+    echo "Quente";
     }
 else {
-    echo "Reprovado";
+    echo "Agradavel";
 }
 ?>
