@@ -1,6 +1,8 @@
-<?php
-for ($i = 10; $i > 1 ; $i++) {
 
-    echo "Numero: " . $i . "  ";
+<?php
+$numero = readline(prompt:"Digite um numero: ");
+
+for ($i = $numero; $i >= 1; $i--) {
+    echo  $i . "  ";
 }
 ?>
