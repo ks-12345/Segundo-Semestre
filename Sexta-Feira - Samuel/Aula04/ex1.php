@@ -1,8 +1,17 @@
 <?php
 
-readline("carro1", "carro2", "carro3", "carro4");
+function exibirCarro($modelo, $marca, $ano, $revisao, $Ndonos) {
+   
+    $revisao_texto = $revisao ? "Sim" : "Não";
 
-switch ($tipo) {
+    echo "O carro " . $marca . " " . $modelo . ", ano " . $ano . ", já passou por revisão: " . $revisao_texto . ", número de donos: " . $Ndonos;
+}
+
+
+$escolha = readline("Digite o número do carro (carro1, carro2, carro3 ou carro4): ");
+
+
+switch ($escolha) {
     case "carro1":
 $modelo ="versa";
 $marca = "nissan";
@@ -36,16 +45,6 @@ $Ndonos = 1;
 break;
 }
 
-function ConRevi ($revisao): bool {
-    $revisao=1;
-    echo "Sim";
+exibirCarro($modelo, $marca, $ano, $revisao, $Ndonos);
 
-} 
-
-$revisao = passouRevisao ($revisao_carro1); {
-
-    return 
-    
-
-}
 ?>
