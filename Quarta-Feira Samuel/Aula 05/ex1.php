@@ -1,50 +1,91 @@
 <?php
+Class Cachorro {
+    public $nome;
+    public $idade;
+    public $raca;
+    public $castrado;
+    public $sexo;
 
-// Criar uma classe simples
-class Carro { //criando classe (molde para criação de objetos)
-
-    public $Marca; //criando atributo marca
-    public $Modelo; //criando atributo modelo
-    public $Ano; //criando atributo ano de fabric.
-    public $Revisao; //criando atributo  "precisa de revisão?"
-    public $N_donos; //criando atributo número de donos
-    public $Cor; //criando atributo cor
-    public $Placa; //criando atributo placa
-
-    public function __construct($Marca, $Modelo, $Ano, $Revisao, $N_donos) {
-        $this->Marca = $Marca;
-        $this->Modelo = $Modelo;
-        $this->Ano = $Ano;
-        $this->Revisao = $Revisao;
-        $this->N_donos = $N_donos;
-        $this->Cor = $Cor;
-        $this->Placa = $Placa;
+    public function __construct($nome, $idade, $raca, $castrado, $sexo) {
+        $this->nome = $nome;
+        $this->idade = $idade;
+        $this->raca = $raca;
+        $this->castrado = $castrado;
+        $this->sexo = $sexo;
     }
 }
 
-$carro1 = new Carro("Porsche", "911", 2020, false, 1);
-$carro2 = new Carro("Mitsubishi", "Lancer", 1945, true, 1);
+$Cachorro1 = new Cachorro("Rex", 5, "Labrador", true, "Macho");
+$Cachorro2 = new Cachorro( "Bella", 3, "Poodle", false, "Fêmea");
+$cachorro3 = new Cachorro( "Max", 4, "Bulldog", true, "Macho");
+$Cachorro4 = new Cachorro( "Lucy", 2, "Beagle", false, "Fêmea");
+$Cachorro5 = new Cachorro( "Duke", 6, "Boxer", true, "Macho");
+$Cachorro5 = new Cachorro( "Molly", 1, "Dachshund", false, "Fêmea");
+$Cachorro6 = new Cachorro( "Rocky", 7, "Rottweiler", true, "Macho");
+$Cachorro7 = new Cachorro( "Luna", 2, "Chihuahua", false, "Fêmea");
+$Cachorro8 = new Cachorro( "Charlie", 3, "Golden Retriever", true, "Macho");
+$Cachorro9 = new Cachorro( "Sadie", 4, "Shih Tzu", false, "Fêmea");
+$Cachorro10 = new Cachorro( "Buddy", 5, "Cocker Spaniel", true, "Macho");
 
-
-class Condutor {//criando classe (molde para criação de objetos)
+class Usuario {//criando classe (molde para criação de objetos)
 
     public $Nome; 
-    public $Idade; 
-    public $Cidade; 
+    public $CPF; 
+    public $Sexo;
+    public $Email; 
     public $EstadoCivil; 
-  
+    public $Cidade; 
+    public $Estado; 
+    public $Enderenço; 
+    public $CEP; 
 
-    public function __construct($Nome, $Idade, $Cidade, $EstadoCivil) {
-        $this->Nome = $Nome;
-        $this->Idade = $Idade;
-        $this->Cidade = $Cidade;
-        $this->EstadoCivil = $EstadoCivil;
- 
+    public function __construct($Nome, $CPF, $Sexo, $Email, $EstadoCivil, $Cidade, $Estado, $Endereço, $CEP) {
+        
+        $this->Nome = $Nome; 
+        $this->CPF =  $CPF; 
+        $this->Sexo = $Sexo;
+        $this->Email = $Email; 
+        $this->EstadoCivil = $EstadoCivil; 
+        $this->Cidade = $Cidade; 
+        $this->Estado = $Estado; 
+        $this->Enderenço = $Enderenço; 
+        $this->CEP = $CEP; 
+    }
 }
-}
 
-$condutor1 = new Condutor("Maria", "88", "Limeira", "Viuva");
-$condutor1 = new Condutor("Aleandro", "20", "Limeira", "Solteiro");
-$condutor1 = new Condutor("Jose", "47", "Bahia", "Casado");
+    $usuario1 = new Usuario(
+    "Josenildo Afonso Souza",
+    "100.200.300-40", 
+    "Masculino",
+    "josenewdo.souza@gmail.com",
+    "Casado",
+    "Xique-Xique",
+    "Bahia",
+    "Rua da amizade, 99",
+    "40123-98"
+);
 
+$usuario2 = new Usuario(
+    "Valentina Passos Scherrer",
+    "070.070.060-70", 
+    "Feminino",
+    "scherrer.valen@outlook.com",
+    "Divorciada",
+    "Iracemápolis",
+    "São Paulo",
+    "Avenida da saudade, 1942",
+    "23456-24"
+);
+
+$usuario3 = new Usuario(
+    "Claudio Braz Nepumoceno",
+    "575.575.242-32", 
+    "Masculino",
+    "Clauclau.nepumoceno@gmail.com",
+    "Solteiro",
+    "Piripiri",
+    "Piauí",
+    "Estrada 3, 33",
+    "12345-99"
+)
 ?>
