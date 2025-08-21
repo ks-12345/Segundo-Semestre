@@ -14,16 +14,13 @@
 
     <img src="Igreja/logo.png" width="100" height="100">
 
-    <nav>
-
-<button onclick="HOME()">Menu</button>
-    <button onclick="HISTORIA()">Nossa Historia</button>
-
- <button onclick="AGENDA()">Nossa Agenda</button>
-
-<button onclick="MENSAGEM()">Mensagens</button>
-
+<nav>
+    <a href="#HOME"><button>Menu</button></a>
+    <a href="#HISTORIA"><button>Nossa Historia</button></a>
+    <a href="#AGENDA"><button>Nossa Agenda</button></a>
+    <a href="#MENSAGEM"><button>Mensagens</button></a>
 </nav>
+
 
 </div>
 
@@ -36,7 +33,7 @@
 </div>
 
 
-<div class="historia">
+<div class="historia" id="HISTORIA">
    <img src="Igreja/foto1fundo.jpg"  width="800" height="400">
 <h1>Nossa Historia</h1>
 
@@ -47,7 +44,8 @@
 
 <!-- AGENDA DAS MISSAS -->
 
-<div class="agenda">
+
+<div id="AGENDA" class="agenda" >
     <h1>Nossa Agenda</h1>
 
     <p>Confira abaixo os horários das missas e eventos da nossa igreja.</p>
@@ -76,7 +74,7 @@
 </div>
 </div>
 
-<div class="Mensagens">
+<div class="Mensagens" id="MENSAGEM">
 
     <h1>Deixe sua Mensagem</h1>
     <p>Compartilhe suas intenções e pedidos de oração conosco.</p>
@@ -92,7 +90,7 @@
 
 </div>
 
-<div class="contato">
+<div class="contato" id="CONTATO">
     <h1>Contato</h1>
     <p>Para mais informações, entre em contato conosco:</p>
     <p>Tel: 19 99999-9999</p> <p>Email: SaoFrancisco@gmail.com</p> 
