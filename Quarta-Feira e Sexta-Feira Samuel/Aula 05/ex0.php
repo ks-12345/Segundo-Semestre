@@ -11,7 +11,7 @@ class Carro { //criando classe (molde para criação de objetos)
     public $Cor; //criando atributo cor
     public $Placa; //criando atributo placa
 
-    public function __construct($Marca, $Modelo, $Ano, $Revisao, $N_donos) {
+    public function __construct($Marca, $Modelo, $Ano, $Revisao, $N_donos, $Cor, $Placa) {
         $this->Marca = $Marca;
         $this->Modelo = $Modelo;
         $this->Ano = $Ano;
