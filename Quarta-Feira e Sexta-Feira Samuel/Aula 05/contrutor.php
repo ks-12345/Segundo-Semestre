@@ -7,6 +7,10 @@ public $fornecedor;
 
 public $qtde_estoque;
 
+public function __construct($nome, $categoria, $fornecedor, $q) {
+
+}
+
 public function produto_vendido(){
 
  }
