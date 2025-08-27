@@ -35,7 +35,7 @@ Class Pessoa {
         return $this->telefone;
     }
     public function setIdade($idade){
-        $this->idade = abs(int)$idade;
+        $this->idade = abs((int)$idade);
     }
     public function getIdade(){
         return $this->idade;
