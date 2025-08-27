@@ -40,9 +40,15 @@ Class Pessoa {
     public function getIdade(){
         return $this->idade;
     }
+    public function exibirInfo(){
+        echo "Nome: " . $this->getNome() . "<br>";
+        echo "CPF: " . $this->getCpf() . "<br>";
+        echo "Telefone: " . $this->getTelefone() . "<br>";
+        echo "Idade: " . $this->getIdade() . "<br>";
+        echo "Email: " . $this->email . "<br>";
+        echo "Senha: " . $this->senha . "<br>"; 
+    }
 }
-$aluno1 = new Pessoa("jOãO", "123.456.789-10", "(11) 98765-4321", -20, "", "teste123");
-
-echo $aluno1->getNome();
+$aluno1 = new Pessoa("Brenda", "123.456.789-10", "(11) 98765-4321", -19, "brenda@email.com", "teste123");
 
 ?>
