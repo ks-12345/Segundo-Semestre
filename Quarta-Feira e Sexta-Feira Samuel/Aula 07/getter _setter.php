@@ -9,10 +9,10 @@ Class Pessoa {
     private $senha;
 
     public function __construct($nome, $cpf, $telefone, $idade, $email, $senha) {
-        $this->nome = $nome;
-        $this->cpf = $cpf;
-        $this->telefone = $telefone;
-        $this->idade = $idade;
+        $this->setNome($nome);
+        $this->setCpf($cpf);
+        $this->setTelefone($telefone);
+        $this->setIdade($idade);
         $this->email = $email;
         $this->senha = $senha;
     }
@@ -40,7 +40,9 @@ Class Pessoa {
     public function getIdade(){
         return $this->idade;
     }
-//     (int) $variavel converte a variavel para inteiro
-// (abs) $variavel converte a variavel para positivo
 }
+$aluno1 = new Pessoa("jOãO", "123.456.789-10", "(11) 98765-4321", -20, "", "teste123");
+
+echo $aluno1->getNome();
+
 ?>
