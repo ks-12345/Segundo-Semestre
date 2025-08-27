@@ -40,5 +40,7 @@ Class Pessoa {
     public function getIdade(){
         return $this->idade;
     }
+//     (int) $variavel converte a variavel para inteiro
+// (abs) $variavel converte a variavel para positivo
 }
 ?>
