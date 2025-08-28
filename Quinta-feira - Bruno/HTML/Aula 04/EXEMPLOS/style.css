@@ -1,0 +1,29 @@
+
+        h1 {
+            color: purple;
+            background-color: green;
+            text-align: center;
+            padding: 10px;
+            margin-top:100px;
+        }
+        h2 {
+            color: magenta;
+            background-color: blue;
+            text-align: center;
+            padding: 20px;
+
+        }
+
+        h1:hover {
+            color: blue;
+            background-color: black;
+        }
+
+        h2:hover {
+            color: black;
+            background-color: aquamarine;
+        }
+
+        body {
+            background-color: rgb(203, 183, 170);
+        }

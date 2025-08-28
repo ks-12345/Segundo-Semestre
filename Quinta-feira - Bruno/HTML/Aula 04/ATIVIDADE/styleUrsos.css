@@ -1,0 +1,126 @@
+/* Importando fonte retrô */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Press Start 2P', cursive;
+  background: linear-gradient(135deg, #ffb6f9, #a0e7ff, #fdfd96);
+  background-size: 400% 400%;
+  animation: fundoAnimado 12s ease infinite;
+  color: #222;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* Fundo animado em degradê */
+@keyframes fundoAnimado {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Cabeçalho */
+header {
+  padding: 30px 10px;
+  background: rgba(255, 255, 255, 0.6);
+  border-bottom: 5px solid #ff69b4;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  font-size: 22px;
+  color: #ff1493;
+  text-shadow: 2px 2px 0 #fff;
+}
+
+.subtitulo {
+  font-size: 12px;
+  color: #444;
+  margin-top: 8px;
+}
+
+/* Conteúdo principal */
+.conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.conteudo img {
+  width: 350px;
+  border-radius: 20px;
+  border: 4px solid #ff69b4;
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.2);
+}
+
+.texto {
+  max-width: 500px;
+  text-align: left;
+  font-size: 12px;
+  line-height: 1.8;
+  background: rgba(255,255,255,0.7);
+  padding: 20px;
+  border-radius: 20px;
+  border: 3px dashed #ff1493;
+}
+
+/* Destaques */
+.destaque {
+  color: #ff1493;
+  font-weight: bold;
+}
+
+.nuvem {
+  background: #fff;
+  padding: 3px 6px;
+  border-radius: 10px;
+  border: 2px solid #87cefa;
+}
+
+/* Seção de vídeo */
+.video {
+  margin: 50px auto;
+}
+
+.video h2 {
+  color: #ff69b4;
+  margin-bottom: 20px;
+}
+
+.video iframe {
+  border: 5px solid #ff69b4;
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Rodapé */
+footer {
+  background: rgba(255,255,255,0.7);
+  padding: 15px;
+  border-top: 5px solid #ff69b4;
+  font-size: 10px;
+}
+
+/* Corações decorativos animados */
+.decoracao span {
+  position: absolute;
+  bottom: -50px;
+  font-size: 30px;
+  animation: coracoes 10s linear infinite;
+}
+
+.decoracao span:nth-child(1) { left: 10%; animation-delay: 0s; }
+.decoracao span:nth-child(2) { left: 30%; animation-delay: 2s; }
+.decoracao span:nth-child(3) { left: 50%; animation-delay: 4s; }
+.decoracao span:nth-child(4) { left: 70%; animation-delay: 6s; }
+.decoracao span:nth-child(5) { left: 90%; animation-delay: 8s; }
+
+@keyframes coracoes {
+  0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+  50% { transform: translateY(-400px) rotate(180deg); opacity: 0.7; }
+  100% { transform: translateY(-800px) rotate(360deg); opacity: 0; }
+}
