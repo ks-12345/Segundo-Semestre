@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Press Start 2P', cursive;
+  background: linear-gradient(135deg, #000, #111, #400000);
+  background-size: 300% 300%;
+  animation: fundoEnergia 10s ease infinite;
+  color: #f5f5f5;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* Fundo animado com energia */
+@keyframes fundoEnergia {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+header {
+  padding: 30px 10px;
+  background: rgba(0,0,0,0.7);
+  border-bottom: 5px solid #ff0000;
+  box-shadow: 0px 4px 15px #ff0000;
+}
+
+header h1 {
+  font-size: 22px;
+  color: #ff0000;
+  text-shadow: 2px 2px 0 #fff, 4px 4px 15px #ff0000;
+}
+
+.subtitulo {
+  font-size: 12px;
+  color: #f0e68c;
+  margin-top: 8px;
+}
+
+.conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.conteudo img {
+  width: 350px;
+  border-radius: 15px;
+  border: 4px solid #ff0000;
+  box-shadow: 0px 6px 20px rgba(255,0,0,0.8);
+}
+
+.texto {
+  max-width: 500px;
+  text-align: left;
+  font-size: 12px;
+  line-height: 1.8;
+  background: rgba(0,0,0,0.7);
+  padding: 20px;
+  border-radius: 15px;
+  border: 3px solid #ff0000;
+}
+
+.destaque {
+  color: #ff4500;
+}
+
+.espada {
+  color: #ffd700;
+  text-shadow: 0 0 10px #fff;
+}
+
+.vilao {
+  color: #9400d3;
+  font-weight: bold;
+}
+
+.video {
+  margin: 50px auto;
+}
+
+.video h2 {
+  color: #ff0000;
+  margin-bottom: 20px;
+}
+
+.video iframe {
+  border: 5px solid #ff0000;
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(255,0,0,0.8);
+}
+
+footer {
+  background: rgba(0,0,0,0.8);
+  padding: 15px;
+  border-top: 5px solid #ff0000;
+  font-size: 10px;
+}
+
+/* Decoração com raios e fogo */
+.decoracao span {
+  position: absolute;
+  bottom: -50px;
+  font-size: 30px;
+  animation: energia 10s linear infinite;
+}
+
+.decoracao span:nth-child(1) { left: 15%; animation-delay: 0s; color: #ff0000; }
+.decoracao span:nth-child(2) { left: 35%; animation-delay: 2s; color: orange; }
+.decoracao span:nth-child(3) { left: 55%; animation-delay: 4s; color: #ff0000; }
+.decoracao span:nth-child(4) { left: 75%; animation-delay: 6s; color: orange; }
+.decoracao span:nth-child(5) { left: 90%; animation-delay: 8s; color: #ff0000; }
+
+@keyframes energia {
+  0% { transform: translateY(0) scale(1); opacity: 1; }
+  50% { transform: translateY(-400px) scale(1.5); opacity: 0.7; }
+  100% { transform: translateY(-800px) scale(0.8); opacity: 0; }
+}

@@ -1,0 +1,65 @@
+/* Fonte e estilo base */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+    background: linear-gradient(135deg, #001f54, #004aad, #1ec9ff);
+    color: #fff;
+    text-align: center;
+}
+
+/* Cabeçalho */
+header {
+    background: #003366;
+    padding: 20px;
+    border-bottom: 5px solid #00cfff;
+    text-shadow: 2px 2px #000;
+}
+
+header h1 {
+    font-size: 28px;
+    color: #00cfff;
+}
+
+/* Layout principal */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+/* Imagem */
+.imagem img {
+    width: 300px;
+    height: auto;
+    border: 5px solid #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #00cfff;
+}
+
+/* Texto */
+.texto {
+    max-width: 500px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border: 3px solid #00cfff;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #003366;
+    text-align: justify;
+    color: #e0f7ff;
+    line-height: 1.6;
+}
+
+/* Vídeo */
+.video {
+    margin: 40px auto;
+}
+
+.video iframe {
+    border: 5px solid #00cfff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #003366;
+}
