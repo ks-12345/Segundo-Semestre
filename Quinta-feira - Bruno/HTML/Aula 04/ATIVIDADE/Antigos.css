@@ -12,6 +12,7 @@ body {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    background-color: rgb(73, 54, 118);
 }
 img {
     width: 200px;
@@ -23,12 +24,17 @@ img {
 button {
     background-color: #007BFF;
     color: white;
-    padding: 10px 20px;
+    padding: 20px 30px;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 12px;
     margin-top: 20px;
+    font-family: 'press start 2p', cursive;
+}
+button:hover {
+    background-color: #2600ff;
+    
 }
 
 .galeria {
@@ -52,3 +58,26 @@ button {
         text-align: center;
         text-shadow: blueviolet 0 0 50px;
     }
+
+
+    .cabeçalho{
+
+        padding: 40px;
+        text-align: center;
+        border: 10px;
+    }
+ .divisao,
+ button {
+
+    padding: 5px;
+    animation: trocaCor 3s infinite alternate;
+}
+
+@keyframes trocaCor {
+    0% {
+        background-color: #ffe045;
+    }
+    100% {
+        background-color: #3e8eff;
+    }
+}
