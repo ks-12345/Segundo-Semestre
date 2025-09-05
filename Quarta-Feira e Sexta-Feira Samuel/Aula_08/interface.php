@@ -58,4 +58,19 @@ class Circulo implements Forma {
         echo "Área do círculo: $area m²\n";
     }
 }
-    ?>
+
+
+
+$square = new Quadrado();
+$circle = new Circulo();
+
+// Solicita a medida do lado do quadrado
+$medidaQuadrado = readline("Digite a medida do lado do quadrado: ");
+$square->calcularArea($medidaQuadrado);
+
+// Solicita a medida do raio do círculo
+$medidaCirculo = readline("Digite a medida do raio do círculo:");
+$circle->calcularArea($medidaCirculo);
+
+
+ 
