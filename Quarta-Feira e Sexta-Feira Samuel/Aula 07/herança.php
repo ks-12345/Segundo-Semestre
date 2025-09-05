@@ -30,7 +30,7 @@ class Apartamento extends Imovel{ //extensão da classe Imovel
         $this->andar = $andar;
     }
 }
-
+// CRIAR UMA SUBCLASSE CHAMADA ESCOLA COM ATRIBUTO $SEGUIMENTO
 class Escola extends Imovel{
     private $segmento;
 
@@ -40,6 +40,21 @@ class Escola extends Imovel{
     }
 
 }
+    // CRIAR UMA CLASSE FILHA CHAMADA COMERCIO COM ATRIBUTO $TAMANHO
+
+class Comercio extends Imovel {
+
+    private $tamanho;
+
+    public function __construct($categoria, $N_comodos, $valor, $estado_conservacao, $tamanho){
+        parent::__construct($categoria, $N_comodos, $valor, $estado_conservacao);
+        $this->tamanho = $tamanho;
+    }
+}
+
+
+
+
 
 ?>
 
