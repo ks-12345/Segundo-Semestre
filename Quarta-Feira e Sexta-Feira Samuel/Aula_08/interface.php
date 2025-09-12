@@ -72,5 +72,38 @@ $square->calcularArea($medidaQuadrado);
 $medidaCirculo = readline("Digite a medida do raio do círculo:");
 $circle->calcularArea($medidaCirculo);
 
+class Pentagono implements Forma {
+    private $lado;
+    private $apotema;
 
+    public function __construct($lado, $apotema) {
+        $this->lado = $lado;
+        $this->apotema = $apotema;
+    }
+
+    public function calcularArea($metros): void {
+        $area = (5 * $this->lado * $this->apotema) / 2;
+        echo "Área do pentágono: $area m²\n";
+    }
+}
+
+$p = new Pentagono(4, 3);
+$p->calcularArea(0); // Pass a valid value for $metros
+
+
+class hexagono implements Forma {
+    private $lado;
+    private $apotema;
+
+    public function __construct($lado, $apotema) {
+        $this->lado = $lado;
+        $this->apotema = $apotema;
+    }
+
+    public function calcularArea($metros): void {
+        $area = (6 * $this->lado * $this->apotema) / 2;
+        echo number_format($area, 2) . " m²\n";
+        
+    }
+}
  
