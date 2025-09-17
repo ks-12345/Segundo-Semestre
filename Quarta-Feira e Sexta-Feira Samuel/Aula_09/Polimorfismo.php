@@ -11,33 +11,49 @@
 //Crie um metodo chamado "mover()", onde ele responde a varias formas diferente, para as sub-classes: Carro, Aviao, Barco e Elevador. Dica: Utilize Interfaces.
 
 
-
-Interface Veiculos {
-    public function mover(): void;
+// Interface Veiculo
+interface Veiculo {
+    public function Mover();
 }
 
-class Carro implements Veiculos {
-    public function mover(): void {
-        echo "O carro esta anda";
+// Subclasse Carro
+class Carro implements Veiculo {
+    public function Mover() {
+        echo "O carro está se movendo pela estrada.\n";
     }
 }
 
-class Aviao implements Veiculos {
-    public function mover (): void {
-        echo "O Avião esta voar";
+// Subclasse Avião
+class Aviao implements Veiculo {
+    public function Mover() {
+        echo "O avião está voando pelos céus.\n";
     }
 }
 
-class Barco implements Veiculos {
-    public function mover (): void {
-        echo "O Barco esta navega";
+// Subclasse Barco
+class Barco implements Veiculo {
+    public function Mover() {
+        echo "O barco está navegando pelo mar.\n";
     }
 }
 
-class Elevador implements Veiculos {
-    public function mover (): void {
-        echo "O Elevador esta subindo ou descendo";
+// Subclasse Elevador
+class Elevador implements Veiculo {
+    public function Mover() {
+        echo "O elevador está subindo ou descendo dentro do prédio.\n";
     }
 }
 
+// ===== Criando objetos de teste =====
+$carro = new Carro();
+$aviao = new Aviao();
+$barco = new Barco();
+$elevador = new Elevador();
+
+// Testando individualmente
+echo "=== Testando objetos individualmente ===\n";
+$carro->Mover();
+$aviao->Mover();
+$barco->Mover();
+$elevador->Mover();
 ?>
