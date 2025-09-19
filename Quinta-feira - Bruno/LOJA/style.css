@@ -31,13 +31,12 @@ body {
 }
 /* 🎠 Container do carrossel */
 .carousel {
-  width: 1000%;
-  max-width: flex;
+  width: 100%;
+  max-width: 100%;
   position: relative;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-
 }
 
 /* 🖼️ Slides (container que desliza) */
@@ -98,16 +97,15 @@ input[type="radio"] {
   transform: translateX(-200%);
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+#container {
+  max-width: auto;
+  margin:auto; 
+  padding: 30px;
   background-color: var(--bege);
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-
+  
 }
-
 .title {
   text-align: center;
   color: #333;
@@ -115,12 +113,6 @@ input[type="radio"] {
   font-size: 50px;;
 }
 
-.card{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
 
 img {
     width: 200px;
@@ -130,23 +122,27 @@ img {
    
 }
 /* ...existing code... */
-.produtos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 32px;
+#produtos {
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 2px;
   margin-top: 40px;
+  background: var(--neutro);
+  padding: 50px;
 }
 
 .card {
   background: var(--bege);
   border-radius: 16px;
   padding: 32px 18px;
-  margin: 0;
+  margin: 20px;
   text-align: center;
   box-shadow: 0 6px 24px rgba(0,0,0,0.08);
   border: 2px solid #ececec;
   transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
-  position: relative;
+  position:relative;
+  
 }
 
 .card:hover {
@@ -169,7 +165,8 @@ img {
   font-weight: 700;
 }
 
-.card, .descricao, .preco {
+.card .descricao,
+.card .preco {
   font-size: 1rem;
   color: #444;
   margin-bottom: 18px;
@@ -180,7 +177,7 @@ img {
   color: #fff;
   border: none;
   border-radius: 24px;
-  padding: 12px 32px;
+  padding: 12px 32px 12px;
   font-size: 1rem;
   font-family: 'Poppins', sans-serif;
   cursor: pointer;
