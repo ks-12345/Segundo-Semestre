@@ -12,6 +12,16 @@
   --font-serif: 'Playfair Display', serif;
 }
 /* 🔧 Reset básico e fonte global */
+:root {
+  --fundo: #fdfdfd;
+  --texto: #111111;
+  --neutro: #f5f3f0;
+  --bege: #d4bfa4;
+  --cinza: #2b2b2b;
+  --dourado: #c09450;
+  font-family: 'Poppins', sans-serif;
+}
+/* 🔧 Reset básico e fonte global */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -21,91 +31,29 @@
 body {
   font-family: 'Poppins', sans-serif;
   background: var(--fundo);
-  padding: 50px;
-
+} 
+.header-container {
+    width: 100%; 
+    padding: 20px 40px; 
+    background-color: var(--bege);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;                 
+              
 }
-.Carrossel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.header-container .logo img {
+    height: 200px; 
+    width: auto;  
+    box-shadow: none; 
+    border-radius: 0; 
+    justify-content: space-around;
+    display: flex;
+    
 }
-/* 🎠 Container do carrossel */
-.carousel {
-  width: 1000%;
-  max-width: flex;
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-
-}
-
-/* 🖼️ Slides (container que desliza) */
-.slides {
-  display: flex;
-  width: 100%; /* 100% * número de slides */
-  transition: transform 0.5s ease-in-out;
-}
-
-/* 🎞️ Cada slide */
-.slide {
-  width: 100%;
-  flex-shrink: 0;
-}
-
-.slide img {
-  width: 100%;
-  display: block;
-}
-
-/* 🚫 Esconde os inputs de rádio */
-input[type="radio"] {
-  display: none;
-}
-
-/* ⚪ Botões manuais (bolinhas de navegação) */
-.navigation-manual {
-  position: absolute;
-  width: 100%;
-  bottom: 10px;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-.manual-btn {
-  border: 2px solid #fff;
-  padding: 5px;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.manual-btn:hover {
-  background: #fff;
-}
-
-/* 🔄 Controle do slide com os radios */
-#slide1:checked ~ .slides {
-  transform: translateX(0%);
-}
-
-#slide2:checked ~ .slides {
-  transform: translateX(-100%);
-}
-
-#slide3:checked ~ .slides {
-  transform: translateX(-200%);
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: var(--bege);
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-
+.header-nav {
+    display: flex;
+    gap: 20px; 
+    justify-content:center;
+    align-items: center; 
 }
 
 .title {
@@ -115,38 +63,50 @@ input[type="radio"] {
   font-size: 50px;;
 }
 
-.card{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+.Perfil{
+   display:flex;
+    justify-content:right;
+    margin-left:auto;
+    margin-top:30px;
+    margin-right: 5%;
+
+  }
+
+.usuario{
+   width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }
 
 img {
     width: 200px;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
    
 }
 /* ...existing code... */
-.produtos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 32px;
+#produtos {
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 2px;
   margin-top: 40px;
+  background: var(--neutro);
+  padding: 50px;
 }
 
 .card {
   background: var(--bege);
   border-radius: 16px;
   padding: 32px 18px;
-  margin: 0;
+  margin: 20px;
   text-align: center;
   box-shadow: 0 6px 24px rgba(0,0,0,0.08);
   border: 2px solid #ececec;
   transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
-  position: relative;
+  position:relative;
+  
 }
 
 .card:hover {
@@ -169,7 +129,8 @@ img {
   font-weight: 700;
 }
 
-.card, .descricao, .preco {
+.card .descricao,
+.card .preco {
   font-size: 1rem;
   color: #444;
   margin-bottom: 18px;
@@ -180,9 +141,9 @@ img {
   color: #fff;
   border: none;
   border-radius: 24px;
-  padding: 12px 32px;
+  padding: 12px 32px 12px;
   font-size: 1rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-Poppins);
   cursor: pointer;
   box-shadow: 0 2px 8px rgba(38,0,255,0.08);
   transition: background 0.3s, transform 0.2s;
@@ -200,8 +161,58 @@ button{
   border-radius: 24px;
   padding: 12px 32px;
   font-size: 1rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-Poppins);
   cursor: pointer;
   box-shadow: 0 2px 8px rgba(38,0,255,0.08);
   transition: background 0.3s, transform 0.2s;
+}
+
+/* termos */
+
+.footer{
+font-family: var(--font-Poppins);
+font-size: 25px;
+padding: 90px;
+background-color: var(--dourado);
+border: none;
+text-align: center;
+}
+
+a {
+  color: var(--neutro);
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.apresentacao{
+padding: 50px;
+font-family: var(--font-Poppins);
+font-size: 20px;
+}
+
+.linha {
+  background-color: var(--dourado);
+  padding: 5px;
+}
+
+.filtro-btn, .filtro-btn_ativo{
+  background:var(--cinza);
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  padding: 12px 50px;
+  font-size: 1rem;
+  font-family: var(--font-Poppins);
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(38,0,255,0.08);
+  transition: background 0.3s, transform 0.2s;
+ margin-right: 30px;
+ margin-left: 30px;
+ font-size: 10px;
+}
+
+#botoes-produtos{
+  display: flex;
+justify-content: center;
+width: 100%;
 }
