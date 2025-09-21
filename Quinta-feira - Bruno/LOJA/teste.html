@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="teste.css">
+  <title>Vitrine 2025: Moda, Essência e Estilo em Alta Definição</title>
+</head>
+
+<body>
+  <!-- 🧭 Cabeçalho -->
+  <header>
+    <img class="logo" src="IMAGENS/LOGO.png"> 
+    <h1>ModeVibe</h1>
+    <nav>
+      <button>Home</button>
+      <button>Produtos</button>
+      <button>Sobre Nós</button> 
+      <a href="CARRINHO.HTML"><button>Carrinho</button></a> 
+    </nav>
+  </header>
+
+  <!-- 🎠 Carrossel -->
+  <section class="carousel">
+    <!-- Inputs para controle -->
+    <input type="radio" name="radio-btn" id="slide1" checked>
+    <input type="radio" name="radio-btn" id="slide2">
+    <input type="radio" name="radio-btn" id="slide3">
+
+    <!-- Slides -->
+    <div class="slides">
+      <div class="slide"><img src="IMAGENS/BOLSASEROUPA.png" alt="Imagem 1"></div>
+      <div class="slide"><img src="IMAGENS/DENTROSLIDE.png" alt="Imagem 2"></div>
+      <div class="slide"><img src="IMAGENS/sofa.png" alt="Imagem 3"></div>
+    </div>
+
+    <!-- Botões manuais -->
+    <div class="navigation-manual">
+      <label for="slide1" class="manual-btn"></label>
+      <label for="slide2" class="manual-btn"></label>
+      <label for="slide3" class="manual-btn"></label>
+    </div>
+  </section>
+
+  <!-- 📝 Apresentação -->
+  <main>
+    <section class="apresentacao">
+      <h2 class="title">Moda, Essência e Estilo em Alta Definição</h2>
+      <p>
+        <strong>ModeVibe</strong> é mais do que uma loja — é uma experiência de moda em alta definição. 
+        Unimos estilo, essência e inovação para criar peças que traduzem atitude e autenticidade. 
+        Cada detalhe é pensado para quem vive a moda como expressão pessoal e busca estar sempre à frente das tendências.
+        Na <strong>ModeVibe</strong>, o seu estilo é elevado ao próximo nível.
+      </p>
+    </section>
+  </main>
+
+  <!-- 🛒 Produtos -->
+  <section id="produtos">
+    <h2>Nossos Produtos</h2>
+    <div class="card">
+      <img src="ROUPAS/Gemini_Generated_Image_ykl4fzykl4fzykl4.png">
+      <h2>Blazer Estruturado</h2>
+      <p class="preço">R$ 1.890</p>
+      <p class="descricao">Peça fundamental em qualquer guarda-roupa sofisticado.</p>
+      <a href="CARRINHO.HTML"><button>Adicionar ao Carrinho</button></a>
+    </div>
+
+    <div class="card">
+      <img src="ROUPAS/Gemini_Generated_Image_xei6g1xei6g1xei6 (2).png">
+      <h2>Camiseta Minimalista</h2>
+      <p class="preço">R$ 290</p>
+      <p class="descricao">Peça essencial com corte refinado e tecido premium.</p>
+      <a href="CARRINHO.HTML"><button>Adicionar ao Carrinho</button></a>
+    </div>
+
+    <div class="card">
+      <img src="ROUPAS/Gemini_Generated_Image_xei6g1xei6g1xei6 (1).png">
+      <h2>Calça de Alfaiataria</h2>
+      <p class="preço">R$ 850</p>
+      <p class="descricao">Elegância e caimento impecável.</p>
+      <a href="CARRINHO.HTML"><button>Adicionar ao Carrinho</button></a>
+    </div>
+  </section>
+
+  <!-- 🗂️ Categorias -->
+  <section id="categorias">
+    <h2>Categorias</h2>
+    <div class="grid-categorias">
+      <div class="cat-card">Roupas</div>
+      <div class="cat-card">Calçados</div>
+      <div class="cat-card">Acessórios</div>
+      <div class="cat-card">Novidades</div>
+    </div>
+  </section>
+
+  <!-- 🔥 Promoções -->
+  <section id="promocoes">
+    <h2>Ofertas Especiais</h2>
+    <p>Aproveite descontos exclusivos por tempo limitado.</p>
+    <div class="cards-promocao">
+      <div class="card">
+        <img src="ROUPAS/Gemini_Generated_Image_q7xleiq7xleiq7xl.png">
+        <h2>Trench Coat Clássico</h2>
+        <p class="preço"><del>R$ 1.890</del> R$ 1.490</p>
+        <a href="CARRINHO.HTML"><button>Comprar Agora</button></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 💬 Depoimentos -->
+  <section id="depoimentos">
+    <h2>O que nossos clientes dizem</h2>
+    <div class="depoimento">
+      <p>"Peças incríveis, qualidade impecável. Estou apaixonada pela ModeVibe!"</p>
+      <span>- Camila Souza</span>
+    </div>
+    <div class="depoimento">
+      <p>"Comprei online e chegou rapidinho. Atendimento excelente!"</p>
+      <span>- João Oliveira</span>
+    </div>
+  </section>
+
+  <!-- 📧 Newsletter -->
+  <section id="newsletter">
+    <h2>Receba novidades e promoções</h2>
+    <form>
+      <input type="email" placeholder="Digite seu e-mail">
+      <button>Inscrever-se</button>
+    </form>
+  </section>
+
+  <!-- ⚡ Rodapé -->
+  <footer>
+    <div class="footer-info">
+      <h3>ModeVibe</h3>
+      <p>Moda, Essência e Estilo em Alta Definição</p>
+    </div>
+    <div class="footer-links">
+      <a href="#">Política de Privacidade</a> | 
+      <a href="#">Termos de Uso</a> | 
+      <a href="#">Contato</a>
+    </div>
+    <div class="redes-sociais">
+      <a href="#"><img src="IMAGENS/instagram.png" alt="Instagram"></a>
+      <a href="#"><img src="IMAGENS/facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="IMAGENS/tiktok.png" alt="TikTok"></a>
+    </div>
+  </footer>
+</body>
+</html>

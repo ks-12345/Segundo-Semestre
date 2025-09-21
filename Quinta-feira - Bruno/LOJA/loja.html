@@ -5,21 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Vitrine 2025: Moda, Essência e Estilo em Alta Definição</title>
+
 </head>
 
 <body>
     <!-- 🧭 Cabeçalho -->
+    
      <div id="container">
-    <header>
-        <img class="logo" src="IMAGENS/LOGO.png" > 
-        <h1>ModeVibe</h1>
-        <nav>
-            <button>Home</button>
-            <button>Produtos</button>
-            <button>Sobre Nós</button> 
-           <a href="CARRINHO.HTML"><button>Carrinho</button></a> 
-        </nav>
-    </header>
+<header class="header-container">
+
+    <a href="loja.html" class="logo">
+        <img src="IMAGENS/LOGO.png" > 
+    </a>
+    <br>
+    <nav class="header-nav">
+        <button>Home</button>
+        <button>Produtos</button>
+        <button>Sobre Nós</button> 
+        <a href="CARRINHO.HTML"><button>Carrinho</button></a> 
+    </nav>
+<div class="Perfil" >
+    <span class="usuario">
+        <img src="IMAGENS/perfil.png" >
+    </span>
+</div>
+</header>
     </div>
 <br>
     <!-- 🎠 Carrossel -->
@@ -67,6 +77,19 @@
     </main>
 <br>
 
+<div class="linha"></div>
+
+<<div id="botoes-produtos">
+    <main>
+        <nav>
+            <button class="filtro-btn_ativo">Todos</button>
+            <button class="filtro-btn">Novidades</button>
+            <button class="filtro-btn">Blazers</button>
+            <button class="filtro-btn">Calças</button>
+            <button class="filtro-btn">Acessórios</button>
+        </nav>
+    </main>
+</div>
     <!-- 🛒 Card de Produto -->
 
 <div id="produtos">
@@ -134,7 +157,6 @@
         </a>
     </div>
 
-
     <div class="card">
         <img src="ROUPAS/Gemini_Generated_Image_q7xleiq7xleiq7xl.png">
 
@@ -165,8 +187,64 @@
             <button>Adicionar ao Carrinho</button>
         </a>
     </div>
+
+     <div class="card">
+        <img src="ROUPAS/cachecol.png">
+
+        <h2>Cachecol de Lã:</h2>
+
+        <p class="preço">Venda: R$ 230</p>
+
+        <p class="descricao">
+            Um acessório que combina conforto e estilo, ideal para os dias mais frios, apresentado de forma a destacar a sua textura aconchegante.
+        </p>
+
+        <a href="CARRINHO.HTML">
+            <button>Adicionar ao Carrinho</button>
+        </a>
+    </div>
+
+ <div class="card">
+        <img src="ROUPAS/camisa.png">
+
+        <h2>Vestido Tubinho Minimalista:</h2>
+
+        <p class="preço">Venda: R$ 2.990</p>
+
+        <p class="descricao">
+            Um clássico reinventado com um toque moderno, ideal para a mulher que busca elegância e praticidade em diversas situações.
+        </p>
+
+        <a href="CARRINHO.HTML">
+            <button>Adicionar ao Carrinho</button>
+        </a>
+    </div>
+
+ <div class="card">
+        <img src="ROUPAS/saia.png">
+
+        <h2>Bota de Couro:</h2>
+
+        <p class="preço">Venda: R$ 1.599</p>
+
+        <p class="descricao">
+            Uma peça clássica e atemporal, essencial para um guarda-roupa sofisticado, que pode transitar do ambiente de trabalho para eventos sociais.
+        </p>
+
+        <a href="CARRINHO.HTML">
+            <button>Adicionar ao Carrinho</button>
+        </a>
+    </div>
 </div>
-    
+
+    <!-- RODAPE -->
+<div class="footer">
+        <p>&copy; 2025 ModeVibe. Todos os direitos reservados.</p>
+        <br>
+    <a href="termos.html">Política de Privacidade</a> | 
+      <a href="termos.htm">Termos de Uso</a> | 
+      <a href="termos.html">Contato</a>
+</div>
 
 
 </body>
